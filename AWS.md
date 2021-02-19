@@ -15,6 +15,7 @@ How to communicate between the subnet?
 What is NAT?
 How to connect AWS network to on your own premises data center?
 If a server is in the private Network then how it will connect to internet?
+What is the VPC?
 
 Where is S3 logs stored?
 Can we mount S3 on the server?
@@ -29,6 +30,7 @@ How to extend a EBS volume from 50 to 500G.
 What is the difference in later 7 and layer 5?
 What is load balancer?
 
+What is the RDS?
 What is the database you use in AWS?
 What is the difference between Amazon RDS and stand alone MySQL database?
 
@@ -46,6 +48,11 @@ Explain 3 tire architecture in AWS?
 What type of images you use in AWS?
 What are the AWS components you have worked on?
 How to configure postfix in AWS?
+
+
+What is the CDN?
+
+What is the EC2?
 
 
 
