@@ -1,11 +1,22 @@
 * How to call variable in ansible?
-How to define variable in ansible?
-How to declare global veriable in ansible?
+    we can call a variable by using "{{ variable }} "
+    
+* How to define variable in ansible?
+    we can declear varialbe by using "var" keyword in the playbook. Below is the example
+      - hosts: app_servers
+        vars:
+         myVar: "myValue"
+         
+* How to declare global veriable in ansible?
 
-What is Jinja2 template?
+* What is Jinja2 template?
+    Jinja2 templates is a template files that store variables that can change from time to time. 
+    When Playbooks are executed, these variables get replaced by actual values defined in Ansible Playbooks.
 
 How to store the encrypted variable in ansible?
-What is ansible-vault?
+* What is ansible-vault?
+    Ansible Vault is used to encrypt the sensitive information in the playbook.
+    
 Which ssl protocol you are using for incrpting the password in ansible?
 
 
