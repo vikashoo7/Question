@@ -8,34 +8,93 @@
          myVar: "myValue"
          
 * How to declare global veriable in ansible?
+    we can set the global variable by using config, environment variables and the command line.
+
 
 * What is Jinja2 template?
     Jinja2 templates is a template files that store variables that can change from time to time. 
     When Playbooks are executed, these variables get replaced by actual values defined in Ansible Playbooks.
 
-How to store the encrypted variable in ansible?
+* How to store the encrypted variable in ansible?
+
 * What is ansible-vault?
     Ansible Vault is used to encrypt the sensitive information in the playbook.
     
-Which ssl protocol you are using for incrpting the password in ansible?
+* Which ssl protocol you are using for incrpting the password in ansible?
 
 
-What is ansible modules?
-What is gathering Facts in Ansibel?
-How to debug the ansible play book?
-Have you ever edited the ansible modules?
-What is fact?
-What are the modules you have used in Ansible automation.
-Write a yum module which will install various package based on the OS distribution.
+* What is ansible modules?
+    Ansible modules are standalone scripts that can be used inside an Ansible playbook
 
+* What is playbook?
+    Playbook consists of anisible code and these code performs a set of task.
+    
+* How to debug the ansible play book?
+    we can use "debugger" module to debug the playbook. For more information, we can visit below URL
+        https://docs.ansible.com/ansible/latest/user_guide/playbooks_debugger.html
+        
+* What is fact?
+    Ansible facts are the data related to remote server like IP address, Os version etc.
+    
+* What is gathering Facts in Ansibel?
+    Gathering facts is the process to storing the remote server data.
 
-What is inventory in ansible?
-How to mention specific port in Ansible while running the play book?
+* Have you ever edited the ansible modules?
+* What are the modules you have used in Ansible automation?
 
-What is roles in ansible?
-What is defaults in the role in ansible?
+* Write a yum module which will install various package based on the OS distribution.
+        ---
+        - host: package_install
+          task:
+          - name: Installing the pacakge
+            yum:
+              with_items:
+              name: ["package1", "package2"]
+              state: present
+            when: '{{ ansible_distribution }}' == 'Ubuntu'
+        ...
 
-How to copy the file from one location to other locations in the remote server using Ansible?
+        ######This is deprecated in Ansible current version and will be removed in the futures vesion
+        ---
+        - host: pacakge_install
+          task:
+          - name: Install mongodb packages
+            yum: 
+              name="{{ item }}"
+              state=latest
+            with_items:
+              - package1
+              - package2
+            when: '{{ ansible_distribution }}' == 'Ubuntu'
+        ...
+
+* What is inventory in ansible?
+    This is the list of the host where ansible playbook will run.
+    
+* How to mention specific port in Ansible while running the play book?
+    we can use the specify the specific port in the inventory. below is the exaple.
+        [some_task]
+        myRemoteServer.com  ansile_port=<port_number>
+
+* What is roles in ansible?
+    It is the collection of playbook that will run the remote server.
+    
+* What is defaults in the role in ansible?
+    This will contain the default variable for the role. 
+    These variables have the lowest priority of any variables.
+    It can be easily overridden by any other variable, including inventory variables.
+    
+* How to copy the file from one location to other locations in the remote server using Ansible?
+    we can use "remote_src" to copy the file from one location to other location in the remote server. "remote_src=yes" means it will look for source in the remote server.
+      - name: Copying the file
+        file:
+          src: /remote/server/source/file
+          dest: /remote/server/destination/file
+          owner: root
+          group: root
+          state: link
+          remote_src: yes
+
 How to copy a file between remote server using Ansible?
 what is the difference between playbook and task?
 How to run a playbook using a different user?
