@@ -17,7 +17,9 @@ How to connect AWS network to on your own premises data center?
 If a server is in the private Network then how it will connect to internet?
 What is the VPC?
 
-Where is S3 logs stored?
+* Where is S3 logs stored?
+  it is simple storage service.
+  
 Can we mount S3 on the server?
 How to sync between between the two S3 across the zone?
 
