@@ -1,4 +1,11 @@
+* How to disconnect the node from the Kubernetes clster?
+    we can use the below command to disconnect/drain the node from the cluster.
+    #kubectl drain node-name
+    
 How Kubernetes connect with node?
+    we can use the below command to add the worker node.
+        #kubeadm token create --print-join-command      ##run this command to the master node and then past the output to the new worker name.
+        
 What is the high level diagram for Kubernetes?
 What is the command to join the new node to the k8s cluster?
 What is the difference in docker swarn and Kubernetes?
