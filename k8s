@@ -5,6 +5,7 @@
 * How Kubernetes connect with node?
     we can use the below command to add the worker node.
         #kubeadm token create --print-join-command      ##run this command to the master node and then past the output to the new worker name.
+        
 * Which kubernetes version are you use?
     1.19
     
@@ -45,6 +46,14 @@
  * What is headless service?
  
  * What are the types of service?
+    ther are primarily 3 type od service.
+        1. NodePort – the service makes an internal pod accessible on a port on the node.
+        2. ClusterIP – The service creates a virtual IP inside the cluster to enable commination between different services 
+                       such as a set of front-end server to a set of back end servers.
+        3. Load balancer – We provisions a load balancer for our application in supported cloud provides.
+        4. ExternalName - This maps the service to the contents of the externalName field (e.g., foo.bar.example.com). 
+                          It does this by returning a value for the CNAME record.
+
  
 * What is the high level diagram for Kubernetes?
     The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
