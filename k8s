@@ -2,10 +2,62 @@
     we can use the below command to disconnect/drain the node from the cluster.
     #kubectl drain node-name
     
-How Kubernetes connect with node?
+* How Kubernetes connect with node?
     we can use the below command to add the worker node.
         #kubeadm token create --print-join-command      ##run this command to the master node and then past the output to the new worker name.
-        
-What is the high level diagram for Kubernetes?
+* Which kubernetes version are you use?
+    1.19
+    
+* What is the difference in scheduler?
+
+* What are the differnet types of container?
+    1. Single container
+    2. Multi container
+    3. sidecar container
+    4. init container
+    
+* Where we can choose the multi container pod?
+    We can choose multicontainer where one pod has the dependency with other pod. 
+
+* How to login to the multi container pod?
+
+* What is the difference between Statefulset and Deployment?
+    The primary difference between is, in Statefulset, it is a sticky identification. it depends on the hostname. 
+    if the container goes does down then it will up gain with the same name and the same suffix. This is helpful when we need cluster lind of deplyoment.
+
+* What the objects you use in the K8s?
+    1. Deploument
+    2. Config Maps
+    3. secret
+    4. service account
+    5. Cluster role
+    6. Cluster role bindings
+ 
+ * What is the use of service account?
+    it provide the access to the some other servie to use the k8s cluster.
+    
+ * How to access the application from outside the Kubernestes ?  
+    we can use service of "NodePort" type to access the application from outside the K*s cluseter.
+ 
+ * What is the use of cluster IP in the K8s cluster?
+ 
+ 
+ * What is headless service?
+ 
+ * What are the types of service?
+ 
+* What is the high level diagram for Kubernetes?
+    The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
+    master Component are:
+        1. Controller manager - it is resposible for running controllers.
+        2. Scheduler - it identifies the right node to place a container on based on the containers
+        3. API Server - it is primary management component of Kubernetes. it exposes the k8s API.
+        4. ETCD - it is a database that stores information in a key value format.
+    Worker Component are:
+        1. kubeproxy - it responsible for communication between the worker nodes. 
+        2. kubelet - it is an agent that runs on each node in a cluster. 
+                     It listen the instruction from the Kubernetes API server and deploys or destroy containers on the nodes as required
+        3. Container runtime - it is resposible for running containers.Currently, K8s supports both Docker and Rocket containers.
+
 What is the command to join the new node to the k8s cluster?
 What is the difference in docker swarn and Kubernetes?
