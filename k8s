@@ -41,7 +41,7 @@
     we can use service of "NodePort" type to access the application from outside the K*s cluseter.
  
  * What is the use of cluster IP in the K8s cluster?
- 
+    It helps the application to access with in the cluster.
  
  * What is headless service?
  
@@ -54,7 +54,16 @@
         4. ExternalName - This maps the service to the contents of the externalName field (e.g., foo.bar.example.com). 
                           It does this by returning a value for the CNAME record.
 
+* How to copy a file or configuration file inside the Pod?
+    we can use configMap. we can provide the data via config Map.
  
+ * What is difference between secrets and configMap?
+    The primary differnece is secrests use to store the sensitive information like password where as 
+    configMap store the configuration of the application.
+
+* What is static pod in kubernetes?
+    Static pods are a type of pod that is not observed or managed via Kube-apiserver and is directly bound to the Kubelet daemon on the node.
+    
 * What is the high level diagram for Kubernetes?
     The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
     master Component are:
