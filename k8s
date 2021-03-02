@@ -68,6 +68,14 @@
     It ensures a copy of pod runs on all the node.
     it is useful when we need the information from each node like collecting the logs from the each the node, kubeproxy.
     
+* we are not seeing any pod on the master. Can i deploy the Pods in the master?
+    Yes, we can pod in the master.
+    we are not seeing pod in the master because "Taints" is set to "NoSchedule" to the master node. 
+    Once we remove the vaule of "Tainits", weare able to see the pods on the master
+
+* Is it possible to deploy the Pod on a specific node only?
+    Yes, it is. we can achive this with the help of "nodeSelector" and "nodeAffinity".
+
 * What is high availability on pod level?
     The primary there is 2 thing:
     1. liveness probe - it will check for the applicattion health at a regular interval time
