@@ -63,6 +63,15 @@
 
 * What is static pod in kubernetes?
     Static pods are a type of pod that is not observed or managed via Kube-apiserver and is directly bound to the Kubelet daemon on the node.
+ 
+ * What is daemon set and what is its use?
+    It ensures a copy of pod runs on all the node.
+    it is useful when we need the information from each node like collecting the logs from the each the node, kubeproxy.
+    
+* What is high availability on pod level?
+    The primary there is 2 thing:
+    1. liveness probe - it will check for the applicattion health at a regular interval time
+    2. readiness probe - it will wait for the traffic for a specific time to get the connection.
     
 * What is the high level diagram for Kubernetes?
     The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
