@@ -102,6 +102,10 @@
     1. liveness probe - it will check for the applicattion health at a regular interval time
     2. readiness probe - it will wait for the traffic for a specific time to get the connection.
     
+* What is ingress?
+
+
+    
 * What is the high level diagram for Kubernetes?
     The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
     master Component are:
