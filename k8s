@@ -25,7 +25,28 @@
 * What is the difference between Statefulset and Deployment?
     The primary difference between is, in Statefulset, it is a sticky identification. it depends on the hostname. 
     if the container goes does down then it will up gain with the same name and the same suffix. This is helpful when we need cluster lind of deplyoment.
-
+    
+ * What is the namespace created by default in kubernetes/
+    There are 3 name space by default:
+    1. default
+    2. kube-system - this is used for internal purpose.
+    3. kube-public - This is made available for other users.
+    
+ * How to set the cpu and menmory limit based on name space ?
+    we can use the "ResourceQuota" to set the memory and CPU for the namespace.
+ 
+ * How to set the cpu and menmory limit based on pod?
+    we can add "resource" parameter under the containers section.
+    
+* How to upgrade the kubernetes cluster?
+    There are 2 steps:
+    1. upgrade the master - when we are upgrading the master means do not mean downtime.
+    2. upgrade the nodes - we can remove the node from the cluster by using drain. so that no pod will schedule on the node.
+    Note: Kubernetes supports last 3 version.
+    
+* Why we need the networking soulution like Flannel  etc?
+    To mantain the consistent IP address accross the cluster.
+    
 * What the objects you use in the K8s?
     1. Deploument
     2. Config Maps
