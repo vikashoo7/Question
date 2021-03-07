@@ -40,7 +40,6 @@ How to Create the VPC?
    we can use the below command to sync the s3
     #aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
 
-
 * What is ELB?
    It is used to distribute the traffice between the servers.
 * What is EBS?
@@ -62,12 +61,13 @@ How to Create the VPC?
    2. Network load balancer
    3. Application load balancer
    
-What is the RDS?
+* What is the RDS?
+   This is the AWS relational database server.
+   
 What is the database you use in AWS?
 What is the difference between Amazon RDS and stand alone MySQL database?
 
 How to block a specific port in AWS?
-
 
 What is the difference in EBS and S3?
 What is the difference between NAT and loadbalancer?
