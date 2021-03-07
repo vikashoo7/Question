@@ -32,18 +32,36 @@ How to Create the VPC?
 * Where is S3 logs stored?
   it is simple storage service.
   
-Can we mount S3 on the server?
-How to sync between between the two S3 across the zone?
+* Can we mount S3 on the server?
+   Yes, we can. we can use the below comamnd to mount the s3 in the linux server.
+     #s3fs -o use_cache=/tmp/cache mydbbackup /s3mnt
+     
+* How to sync between between the two S3 across the zone?
+   we can use the below command to sync the s3
+    #aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
 
 
-What is ELB?
-What are the different types of ELB?
-How to extend a EBS volume from 50 to 500G.
+* What is ELB?
+   It is used to distribute the traffice between the servers.
+* What is EBS?
+   it is hight performace block-storage service.
+   
+* How to extend a EBS volume from 50 to 500G.
+   we cannot extend the EBS diretly. 
+   we can take the snapdort of 50G disk and 
+   then provission 500G disk. 
+   Extract the data from the snap sort then moont the 500G.
 
+* What is the difference in later 7 and layer 5?
+* What is load balancer?
+   It is used to distribute the traffice between the servers.
 
-What is the difference in later 7 and layer 5?
-What is load balancer?
-
+* What are the different types of ELB?
+   There are 3 types of ELB:
+   1. Classic load balancer
+   2. Network load balancer
+   3. Application load balancer
+   
 What is the RDS?
 What is the database you use in AWS?
 What is the difference between Amazon RDS and stand alone MySQL database?
