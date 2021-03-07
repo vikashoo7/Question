@@ -21,6 +21,8 @@
     We can choose multicontainer where one pod has the dependency with other pod. 
 
 * How to login to the multi container pod?
+    we can use the below commaned
+        #kubectl exec -it pod-name -c container-name -- /bin/bash
 
 * What is the difference between Statefulset and Deployment?
     The primary difference between is, in Statefulset, it is a sticky identification. it depends on the hostname. 
