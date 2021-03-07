@@ -9,13 +9,25 @@ How to Create the VPC?
         * Add the rules in the route table
       5. Add the subnet to the route table
 
-How to define the subnet in VPC? By which formula?
-What is subnet?
-How to communicate between the subnet?
-What is NAT?
-How to connect AWS network to on your own premises data center?
-If a server is in the private Network then how it will connect to internet?
-What is the VPC?
+* How to define the subnet in VPC? By which formula?
+
+* What is subnet?
+   it is a logical sub-division of network.
+   
+* How to communicate between the subnet?
+   we can use internal IP addrress to commicated between the subnet.
+   
+* What is NAT gateway?
+   Network Address Translation (NAT) Gateway, a highly available AWS managed service 
+   that makes it easy to connect to the Internet from instances within a private subnet in an AWS.
+   
+* How to connect AWS network to on your own premises data center?
+
+* If a server is in the private Network then how it will connect to internet?
+    With the help of NAT gateways, we can connect from the private network to internet.
+    
+* What is the VPC?
+   it i a  logically isolated of virtual network.
 
 * Where is S3 logs stored?
   it is simple storage service.
