@@ -41,6 +41,9 @@ User
     What is the difference between in rhel6 and rhel7 in terms of user creating?
     How to create a user with specific uid?
     How to set the umask for a specific user?
+    what is suid , guid, sticky bit?
+    What is the difference between 'su usernane’ and 'su - usernane’
+    What is sticky bit? If I have given 777 permission on sticky bit then the other user will delete or edit the file?
 
 
 
@@ -115,73 +118,66 @@ General
 ------
     What is the default time for ssh to time out.
 
-    How to count the number of the httpd process  in the server?
+    
     How to check whether the  server is virtual or physical?
     Do we need ip tables if we already configured firewall on network?
     How to shutdown the server at 6.00 AM.?
-    what is suid , guid, sticky bit?
+    
     A server is not pinging, how to troubleshoot?
-    How to disable ping in the servers?
+    
     What is the difference in Access time and modified time?
     What is the user of strace command?
-    What is suid and sticky bit?
     What is the configuration file for postfix?
-    What is the file for kernel parameter?
+    
     How to scan the disk new disk?
     What is the time for load average? It will 1 10 15 in sec.
     What is sar -b?
-    How to upgrade the kernel?
+    
     What is the SNMP? What is the default 2 port for SNMP?
-    How to make a particular process active?
+    
     What is the difference between RAID1 and RAID 0?
     How to change in the LVM with the linear to mirror to the Raid?
-    What is Zombie process?
-    What is the difference between 'su usernane’ and 'su - usernane’
-    How to prioritize the process?
+    
+    
+    
     What is the procedure id 1and 0?
     What is the difference in /bin and /sbin
-    What is monolethic kernal?
-    What is kernal? How it works?
-    What is pxe boot? How it works?
-    What process you are using for process management?
+
+    
+    	
     What is the difference in OS migration and OS patching?
-    How to upgrade the kernel?
+    
     How to check the active connection for a directory?
     How to store the dmesg log automatically.
-    What is sticky bit?
     What is the difference between who and w?
     What is the difference between the var/log and /usr/ log ?
     What is the port for telnet?
-    How to restart a process?
+    
     What is the location for systemctl?
     What is the default configuration file for kick start?
     What is the 5 column in the cron tab?
     What is systemd?
-    What is the difference between in init process and Systemd?
-    What is the disadvantage in Systemd?
+    
+    
     What is the minimum/default memory taken by SSH?
-    How to create rpm?
-    How to create yum repo?
-    How  does initram disk create?
-    How initram disk depends on kernel version?
+    
+
     what are the different type of os installation?
     Is all patch required server reboot?
     How to troubleshoot if we are not able to ping, ssh to the server. Consider there is no issue with ssh service, firewall,
     After patching, the kernel is going with kernel panic error?
 
-    How to find the child process from a pic?
+    
     How to allow or deny a specific host based on the service?
     What is the port of samba?
     How to check the system performance issue?
-    What is sticky bit? If I have given 777 permission on sticky bit then the other user will delete or edit the file?
+    
     How to scan a lun?
-    What are the components required to set up PXE boot or how to setup PXE boot?
+    
     How to run the command in the remote server with password less?
     How to perform the patching?
     How to troubleshoot the performance issue?
     Exept top what the other commands you use to view the performance statistics?
-    What stick bit?
-    What is suid?
     What “---” in scan command.
     What are the things need to consider for increasing the performance of the server.
     What is IAC(infrastructure as a code in Linux)
@@ -192,6 +188,28 @@ General
     How to configure samba?
     Which is a better os rhel, centos, Fedora?
     How to configure NTP?
+
+Process
+-------
+        How to count the number of the httpd process  in the server?
+        How to make a particular process active?
+        What is Zombie process?
+        How to prioritize the process?
+        What process you are using for process management?
+        How to restart a process?
+        What is the difference between in init process and Systemd?
+        What is the disadvantage in Systemd?
+        How to find the child process from a pic?
+
+
+
+Kernel
+------
+        How to disable ping in the servers?
+        What is the file for kernel parameter?
+        How to upgrade the kernel?
+            What is monolethic kernal?
+            What is kernal? How it works?
 
 
 
@@ -208,6 +226,8 @@ Yum
     How to create yum repository using one rpm?
     How to install gui in the Linux?
     How to downgrade a package when an application team complain about the application?
+    How to create rpm?
+    How to create yum repo?
 
 
 
@@ -266,6 +286,13 @@ Boot
     How to troubleshoot  if MBR is currpted?
     How to go to the single user mode?
     What is the difference between intrd and intfs?
+    What is pxe boot? How it works?
+        How  does initram disk create?
+    How initram disk depends on kernel version?
+    What are the components required to set up PXE boot or how to setup PXE boot?
+    
+    
+    
 
 
 
