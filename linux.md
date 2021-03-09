@@ -4,14 +4,14 @@ Shell Script
     How to convert lowercase to uppercase in shell script?
     How to create a user in 10 server.
     what if I want to create a user in 1000 server.
-    Tr -d
-    grep -oP doll
-    What is the difference between seed -i and seed -e.
+    what does "Tr -d" do?
+    what does "grep -oP doll"?
+    What is the difference between "sed -i" and "sed -e".
     How to create 100 files without using for loop? HInt: with the help of regular expression?
     How to find the file which is not modified in last 30 days?
     Do I need to mention shebang in the shell script?
-    what are the various types of shell in Linux?
     what is shebang in shell script?
+    what are the various types of shell in Linux?
     Write a shell script for getting the kernel version of 3 server?
     How to use a parameter in shell script?
     How to find a specific patter in file and then remove the specific patter?
@@ -42,8 +42,9 @@ User
     How to create a user with specific uid?
     How to set the umask for a specific user?
     what is suid , guid, sticky bit?
-    What is the difference between 'su usernane’ and 'su - usernane’
     What is sticky bit? If I have given 777 permission on sticky bit then the other user will delete or edit the file?
+    What is the difference between 'su usernane’ and 'su - usernane’
+    
 
 
 
@@ -70,7 +71,6 @@ Filesystem
     How to reduce the Root file system?
     Df command is hanging ? How do we identify the problem mount point? 
     How to extend swap using LVM?
-    How to extend the LVM?
     What is LVM mirror?
     What is lvm filter?
     How to extend the inode in the Linux?
@@ -92,8 +92,6 @@ Networking
     What nmlci does?
     what we see or analysis in the tcpdump output
     How to detach the bonding interface?
-
-    Command to detach the bonding interface?
     How to configure the network interface?
     What are the various types of network bonding?
     How to check the bonding status?
