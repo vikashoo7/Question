@@ -208,6 +208,7 @@ Kernel
         How to upgrade the kernel?
             What is monolethic kernal?
             What is kernal? How it works?
+        How to change the default kernel in rhel 7?
 
 
 
@@ -272,13 +273,15 @@ NFS
 
 Boot
 ------
-    * If the physical server is keep rebooting then how will you troubleshoot? Hint: the boot order may check.
+
     * How to increase the boot partition in Linux?
-    * What will happen initrd is deleted?
-    * What is initrd?
-    * What is the boot process?
-    Why the size of MBR is 512 bytes? Explain the different components like partition table, segment, magic no
-    How to boot the server in runlavel 4 and how to enable network in run level 4?
+        It's technically possible, but there is NO supported method to do this, 
+        and the unsupported method is very risky and can create instability in the disk.
+
+    * How to boot the server in runlavel 4 and how to enable network in run level 4?
+        we can use "/usr/sbin/telinit" comamnd to cahnge the runlevel
+                #/usr/sbin/telinit <runlevel>
+                
     * Explain boot process?
         1. BIOS (Basic Input output System). This will check physical hardware of the system and executes the MBR
         2. MBR (Master boot Record)- this will executes the Grub
@@ -298,6 +301,13 @@ Boot
             emergency.target (Emergency mode)
 
     * How to go to the single user mode?
+    
+    * What is initrd?
+        Initrd means initial RAM disk. It mounts the root file system to read only mode.
+  
+      * What will happen initrd is deleted?
+           In this case, the server will not boot and you will find "kernel not found error"
+           
     * What is the difference between initrd and Initramfs?
         Initrd is deprecated, replaced by Initramfs,
         initrd was block device based, initramfs is file base.
@@ -311,9 +321,11 @@ Boot
     * How initram disk depends on kernel version?
         The kernel converts initrd into a “normal” RAM disk and frees the memory used by initrd
         
-    How to troubleshoot  if MBR is currpted?
-    What is pxe boot? How it works?
-    What are the components required to set up PXE boot or how to setup PXE boot?
+    * If the physical server is keep rebooting then how will you troubleshoot? Hint: the boot order may check.   
+    * Why the size of MBR is 512 bytes? Explain the different components like partition table, segment, magic no    
+    * How to troubleshoot  if MBR is currpted?
+    * What is pxe boot? How it works?
+    * What are the components required to set up PXE boot or how to setup PXE boot?
     
     
     
