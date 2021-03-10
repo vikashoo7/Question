@@ -28,22 +28,65 @@ Shell Script
 
 User
 -----
-    How to create the multiple user with a same uid? Hint: with -o option in useradd command.
-    A user is removed execute the permissions from a directory then how will you add the execute permissions?
-    What is the meaning -m option in useradd?
-    How to set the account non-expires ?
-    How to ask to change the password to first login?
-    In which file  the hiarcy of the user check like local user or network user.
-    What is the command to check the users related log?
-    What is the location of user log?
-    How to set the root password?
-    How many  primary Or secondary group we can create?
-    What is the difference between in rhel6 and rhel7 in terms of user creating?
-    How to create a user with specific uid?
-    How to set the umask for a specific user?
-    what is suid , guid, sticky bit?
-    What is sticky bit? If I have given 777 permission on sticky bit then the other user will delete or edit the file?
-    What is the difference between 'su usernane’ and 'su - usernane’
+    * How to create the multiple user with a same uid? Hint: with -o option in useradd command.
+        we can use "-o" option to create the multiple user with a same UID.
+            #useradd -o -u 0 -g 0 -N -d /root/ -M root2 
+        
+    * A user is removed execute the permissions from a /bin directory then how will you add the execute permissions
+        we can use any of the below command to restart the /bin permssion.
+            #/lib/ld-linux.so /bin/chmod +x /bin
+            #perl -e 'chmod 0755, "/bin"'
+            
+    * What is the meaning -m option in useradd?
+        this means "Create the user's home directory if it does not exist"
+        
+    * How to set the account non-expires ?
+        we can set "-M -1" for non expiry account
+        #chage -M -1 <user>
+        
+    * How to ask to change the password to first login?
+        we can use "-d" option to force the change the passwrod on first login
+        #chage -d 0 [username]
+        
+    * In which file  the hiarcy of the user check like local user or network user.
+        in this file "/etc/nsswitch.conf" hiarchy is mentioned.
+        
+    * What is the command to check the users related log?
+        we can use command like "finger", "last" to see the user related activity.
+        
+    * What is the location of user log?
+        the user log location is "/var/log/secure"
+        
+    * How to set the root password?
+        we can set the root passwrod by login to "single user mode".
+        
+    * How many  primary Or secondary group we can create?
+        A user can be part of 16 groups at a time.
+        A user have 1 primary and 15 secondary group.
+        
+    * What is the difference between in rhel6 and rhel7 in terms of user creating?
+        In rhel 6, the user uid started with 500 whereas in rhel 7, the user id started with 1000"
+    
+    * What is the umask value?
+        It is the files and directory permission for users.
+        
+    * How to create a user with specific uid?
+        we can use "-u" option to create a user with specific UID.
+        
+    * How to set the umask for a specific user?
+        we can set the umask value in "/etc/profile" file
+        
+    * what is suid , guid, sticky bit?
+        suid - it is a special file permission for executable files which enables other users to run the file with effective permissions of the file owner
+        guid - it is a specical permission for group which allows member of the group to access the files.
+        sticky bit - it is specaial permssion of direcory where only owner of the file can delete the file. For exaple, "/tmp" direcoty.
+        
+    * What is sticky bit? If I have given 777 permission on sticky bit then the other user will delete or edit the file?
+        In this case, the file will not delete but can be edited.
+        
+    * What is the difference between 'su usernane’ and 'su - usernane’
+        "su username" means user will be switced to his account but not moved to its home directory.
+        "su - username" means user will be switched to his account and move to home its home direcory.
     
 
 
