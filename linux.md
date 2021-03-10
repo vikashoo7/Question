@@ -272,21 +272,47 @@ NFS
 
 Boot
 ------
-    If the physical server is keep rebooting then how will you troubleshoot? Hint: the boot order may check.
-    How to increase the boot partition in Linux?
-    What will happen initrd is deleted?
-    What is initrd?
-    What is the boot process?
+    * If the physical server is keep rebooting then how will you troubleshoot? Hint: the boot order may check.
+    * How to increase the boot partition in Linux?
+    * What will happen initrd is deleted?
+    * What is initrd?
+    * What is the boot process?
     Why the size of MBR is 512 bytes? Explain the different components like partition table, segment, magic no
     How to boot the server in runlavel 4 and how to enable network in run level 4?
-    Explain boot process?
-    Explain the run level?
+    * Explain boot process?
+        1. BIOS (Basic Input output System). This will check physical hardware of the system and executes the MBR
+        2. MBR (Master boot Record)- this will executes the Grub
+        3. Grub (Grand unified Bootloader) - this will executes the kernel and mount the initramfs in a read only mode
+        4. kernel - The kernel loads driver modules from initramfs and start the systemd process.
+        5. Systemd - starts the default target.
+        6. target - 
+
+    * Explain the run level?
+        below is the runlevel
+            runlevel0.target (System halt/shutdown)
+            runlevel1.target (Single-user mode)
+            runlevel2.target (User-defined/Site-specific runlevels)
+            runlevel3.target (Multi-user)
+            runlevel5.target (Multi-user,graphical mode)
+            runlevel6.target (Reboot)
+            emergency.target (Emergency mode)
+
+    * How to go to the single user mode?
+    * What is the difference between initrd and Initramfs?
+        Initrd is deprecated, replaced by Initramfs,
+        initrd was block device based, initramfs is file base.
+        with initrd, you created a file system image. with initramfs, you create an archive with the files which the kernel extracts to a tmpfs.
+    
+    * How  does initram disk create?
+        initrd can be created with “mkinitrd” command. The location of initrd is /boot directory. 
+        The kernel version for which the initrd image is being created needs to be passed as an argument to the mkinitrd command.
+            #mkinitrd /boot/initrd-latest.img $(uname -r)
+            
+    * How initram disk depends on kernel version?
+        The kernel converts initrd into a “normal” RAM disk and frees the memory used by initrd
+        
     How to troubleshoot  if MBR is currpted?
-    How to go to the single user mode?
-    What is the difference between intrd and intfs?
     What is pxe boot? How it works?
-        How  does initram disk create?
-    How initram disk depends on kernel version?
     What are the components required to set up PXE boot or how to setup PXE boot?
     
     
