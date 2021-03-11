@@ -1,25 +1,74 @@
 Shell Script
 ----------------
-    How many loops are there in shell script?
-    How to convert lowercase to uppercase in shell script?
-    How to create a user in 10 server.
-    what if I want to create a user in 1000 server.
-    what does "Tr -d" do?
-    what does "grep -oP doll"?
-    What is the difference between "sed -i" and "sed -e".
-    How to create 100 files without using for loop? HInt: with the help of regular expression?
-    How to find the file which is not modified in last 30 days?
-    Do I need to mention shebang in the shell script?
-    what is shebang in shell script?
-    what are the various types of shell in Linux?
-    Write a shell script for getting the kernel version of 3 server?
-    How to use a parameter in shell script?
-    How to find a specific patter in file and then remove the specific patter?
-    What is the difference in 'su’ and 'su -’?
-    What is $$ in shell script?
-    What is $@ in shell script?
-    Write a shell script for finding the odd even number?
-    Find the second largest number using shell script?
+    * How many loops are there in shell script?
+    	there are 3 types of loop in the shell script
+	    1. while statement
+	    2. for statement
+	    3. until statement
+
+    * How to convert lowercase to uppercase in shell script?
+    	we can use the below command to convert lowercase to uppercase
+		#echo $var | tr '[:lower:]'  '[:upper:]'
+		$echo ${var^^}
+		
+    * How to create a user in 10 server.
+    	for i in `cat server`; do ssh -q $i "useradd myuser" ; done
+	
+    * what does "Tr -d" do?
+    	This will delete the character from the string
+		echo "Welcome To Linux" | tr -d 'W'
+		
+     * what does "grep -oP"?
+    	-o, --only-matching - Print only the matched (non-empty) parts of a matching line, with each such part on a separate output line.
+	
+     * What is the difference between "sed -i" and "sed -e".
+    	-i - repalce the file in the string.
+	-e script, --expression=script - add the script to the commands to be executed
+	
+     * How to create 100 files without using for loop? HInt: with the help of regular expression?
+    	#touch file{1..100}
+	
+    * How to find the file which is not modified in last 30 days?
+    	#find /location -mtime +30
+	
+    * Do I need to mention shebang in the shell script?
+    * what is shebang in shell script?
+    	shebang use to tell script which shell to use.
+	
+    * what are the various types of shell in Linux?
+    	bash
+	k-shell
+	
+    * Write a shell script for getting the kernel version of 3 server?
+    	for i in `cat server`; do ssh -q $i "unamr -r"
+	
+    * How to use a parameter in shell script?
+    	shell_script parameter
+	
+    * How to find a specific patter in file and then remove the specific patter?
+    	sed  -i "s/patther/replace_pattern/g" filename
+	
+    * What is $$ in shell script?
+    	this will provide the pid of the shell
+	
+    * What is $@ in shell script?
+    	it will count the paramter of the script
+	
+    * Write a shell script for finding the odd even number?
+	#!bin/bash
+	echo -e "Enter the number : "
+	read  num
+
+	rem=$(( $num % 2 ))
+	if [[ $rem -eq 0 ]]
+	then
+		echo "$num - is Evene"
+	else
+		echo "$num - is Odd"
+	fi
+
+	
+    * Find the second largest number using shell script?
 
 
 
@@ -264,8 +313,13 @@ General
     * How to allow or deny a specific host based on the service?
         We can mention the service in the "/etc/hosts.deny" file  
         
-    What is the difference in OS migration and OS patching?       
-    How to store the dmesg log automatically.        
+
+    * How to store the dmesg log automatically.    
+    	we can use the below command
+		#dmesg --follow > mydmesg.log
+	In rhel/centOS 7, the dmesg logs stores in the "/var/log/dmesg" file
+	
+    What is the difference in OS migration and OS patching?       	
     After patching, the kernel is going with kernel panic error?
     What is the SNMP? What is the default 2 port for SNMP?
     
