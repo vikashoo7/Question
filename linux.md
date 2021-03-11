@@ -160,60 +160,123 @@ General
     What is the default time for ssh to time out.
 
     
-    How to check whether the  server is virtual or physical?
-    Do we need ip tables if we already configured firewall on network?
-    How to shutdown the server at 6.00 AM.?
+    * How to check whether the  server is virtual or physical?
+        we can use the below cammand to find the virtual or physical
+            #dmidecode -t system
+            
+    * Do we need ip tables if we already configured firewall on network?
+        iptables provides the security on OS level. This will secure OS.
+        
+    * How to shutdown the server at 6.00 AM.?
+        we can set the the shutdown command in crontab
     
-    A server is not pinging, how to troubleshoot?
+    * A server is not pinging, how to troubleshoot?
+        we can use the below steps:
+        1. check if the traceroute is reachable to the server. if not then there might be network issue
+        2. we will check the server in console.
     
-    What is the difference in Access time and modified time?
-    What is the user of strace command?
-    What is the configuration file for postfix?
+    * What is the difference in Access time and modified time?
+        Access time - it is the time when the file was last accessed or read.
+        Modified time - it is the time when last modified.
+        
+    * What is the use of strace command?
+        strace is a diagnostic, debugging and instructional userspace utility for Linux.
+        
+    * What is the configuration file for postfix?
+        we can follow the below steps
+        1. install the posfix package
+            #yum install postfix
+        2. edit the "/etc/postfix/main.cf" file and provide the relay host
+             relayhost = mailrelay.comcast.com
+        3. Restart the service
+            #systemctl start postfix
     
-    How to scan the disk new disk?
-    What is the time for load average? It will 1 10 15 in sec.
-    What is sar -b?
+    * How to scan the disk new disk?
+        we can use the below command to scan the disk
+            #echo "- - -" > /sys/class/scsi_host/host0/scan
+            # for i in ls /sys/class/scsi_host/;do echo "- - -" >/sys/class/scsi_host/${i}/scan; done
+                The dashes act as wildcards meaning "rescan everything". 
+                The three values stand for 
+                    1. channel, 
+	                2. SCSI target ID, and 
+	                3. LUN.
+	                
+    * What is the time for load average? It will 1 10 15 in sec.
+        it is the total number of request executing to the total number of request waiting in the queue.
+        
+    * What is sar -b?
+        it is will deisplay the report for I/O  information.
+        
+
+    * What is the procedure id 1and 0?
+        1 - is the process id for init/systemd
+        0 - is the UID for root
+        
+    * What is the difference in /bin and /sbin
+        /bin - it contains all the user related commands
+        /sbin - it contains all the system admin commands
+
+    * How to check the active connection for a directory?
+        we can use "lsof" to check the active connection.
+            #lsof /directory
+            
+
+    * What is the difference between who and w?
+        who - it will display all the user currently logged in the server
+        w - it will display all the user currently logged in the server and tell what the user is doing.
+        
+    * What is the difference between the /var/log and /var/log/secure ?
+        /var/log - contains all the logs
+        /var/log/secure - contains user realted logs
     
+    * What is the location for systemctl?
+        The location of systemctl "/etc/systemd"
+        
+    * What is the default configuration file for kick start?
+        "anaconda-ks.cfg"
+        
+    * What is the 5 column in the cron tab?
+        1. minutes
+        2. hours
+        3. day
+        4. month
+        5. week
+        6. commands
+
+    * What is systemd?
+        This is the first process to start in the server.
+    
+    * What is the minimum/default memory taken by SSH?
+        4MB
+
+
+    * Is all patch required server reboot?
+        No, All patch do not required reboot.
+        
+    * How to troubleshoot if we are not able to ping, ssh to the server. Consider there is no issue with ssh service, firewall?
+        1. Tracerooute the server
+        2. get the console and see what is the issue
+       
+    * How to disable CPU and memory from the OS side?
+        Below commads disable the CPU3 from the server.
+            #echo 0 > /sys/devices/system/cpu/cpu3/online
+            
+    * How to allow or deny a specific host based on the service?
+        We can mention the service in the "/etc/hosts.deny" file  
+        
+    What is the difference in OS migration and OS patching?       
+    How to store the dmesg log automatically.        
+    After patching, the kernel is going with kernel panic error?
     What is the SNMP? What is the default 2 port for SNMP?
     
     What is the difference between RAID1 and RAID 0?
     How to change in the LVM with the linear to mirror to the Raid?
     
     
-    
-    What is the procedure id 1and 0?
-    What is the difference in /bin and /sbin
 
-    
-    	
-    What is the difference in OS migration and OS patching?
-    
-    How to check the active connection for a directory?
-    How to store the dmesg log automatically.
-    What is the difference between who and w?
-    What is the difference between the var/log and /usr/ log ?
-    What is the port for telnet?
-    
-    What is the location for systemctl?
-    What is the default configuration file for kick start?
-    What is the 5 column in the cron tab?
-    What is systemd?
-    
-    
-    What is the minimum/default memory taken by SSH?
-    
-
-    what are the different type of os installation?
-    Is all patch required server reboot?
-    How to troubleshoot if we are not able to ping, ssh to the server. Consider there is no issue with ssh service, firewall,
-    After patching, the kernel is going with kernel panic error?
-
-    
-    How to allow or deny a specific host based on the service?
+    what are the different type of os installation?    
     What is the port of samba?
     How to check the system performance issue?
-    
-    How to scan a lun?
     
     How to run the command in the remote server with password less?
     How to perform the patching?
@@ -222,7 +285,8 @@ General
     What “---” in scan command.
     What are the things need to consider for increasing the performance of the server.
     What is IAC(infrastructure as a code in Linux)
-    How to disable CPU and memory from the OS side?
+
+        
     What is the parameters need to set when ssh is not  set on the remote the server and need to connect via service account?
     What is the difference between centos 6 and centos 7? Hint: introduction of docker of centos7
 
