@@ -1,0 +1,11 @@
+new-app - command allows you to create applications using source code in a local or remote Git repository.
+route - it exposes a service at a host name, like www.example.com, so that external clients can reach it by name.
+	There are 2 types of route:
+		1. unsecure route
+			#oc expose svc/frontend --hostname=www.example.com
+
+		2. secure route
+			secure types of 3 types
+				1. edge - TLS termination occurs at the router, prior to proxying traffic to its destination. TLS certificates are served by the front end of the router, so they must be configured into the route, otherwise the router’s default certificate will be used for TLS termination.
+				2. passthrough -  encrypted traffic is sent straight to the destination without the router providing TLS termination. Therefore no key or certificate is required.
+				3. re-encryption -  is a variation on edge termination where the router terminates TLS with a certificate, then re-encrypts its connection to the endpoint which may have a different certificate. Therefore the full path of the connection is encrypted, even over the internal network. The router uses health checks to determine the authenticity of the host.
