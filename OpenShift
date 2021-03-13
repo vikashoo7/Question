@@ -22,3 +22,7 @@ build strategies in OpenShift
 The network plugin that provides connectivity for pods across the entire cluster without any limitations is ‘ovs-subnet.’
 
 The components unique to OpenShift in comparison to Kubernetes are the Internal registry and Router as an ingress traffic control.
+
+OpenShift Dedicated 3 uses Kubernetes 1.11 and Docker 1.13.1.
+ 	
+The recommended maximum number of pods per OpenShift Dedicated node host is 35. You can have no more than 40 pods per node.
