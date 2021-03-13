@@ -9,3 +9,16 @@ route - it exposes a service at a host name, like www.example.com, so that exter
 				1. edge - TLS termination occurs at the router, prior to proxying traffic to its destination. TLS certificates are served by the front end of the router, so they must be configured into the route, otherwise the router’s default certificate will be used for TLS termination.
 				2. passthrough -  encrypted traffic is sent straight to the destination without the router providing TLS termination. Therefore no key or certificate is required.
 				3. re-encryption -  is a variation on edge termination where the router terminates TLS with a certificate, then re-encrypts its connection to the endpoint which may have a different certificate. Therefore the full path of the connection is encrypted, even over the internal network. The router uses health checks to determine the authenticity of the host.
+
+
+Downward API - it is a mechanism for pods to retrieve metadata without the need to call into Kubernetes API. Downward API is ideal for retrieving metadata and configuration of running pods. 
+
+build strategies in OpenShift
+	Docker strategy
+	custom strategy
+	Source to Image strategy
+	pipeline strategy.
+
+The network plugin that provides connectivity for pods across the entire cluster without any limitations is ‘ovs-subnet.’
+
+The components unique to OpenShift in comparison to Kubernetes are the Internal registry and Router as an ingress traffic control.
