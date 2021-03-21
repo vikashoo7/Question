@@ -1,0 +1,104 @@
+What is the difference between in Image and container?
+What is the difference between the VM and container?
+What is docker and how to use it.
+What is container?
+
+Can we run multiple process in docker?
+
+
+What is the docker network?
+How to connect different container?
+What are different network in docker?
+How 2  docker container  communicate internally?
+
+How to expose docker port from outside world?
+
+
+
+Write a docker file?
+What will happen When we copy a tar file using add and copy in docker?
+What is the difference in CMD and Endpoint?
+If we have 3 CMD in a docker file then what will happen?
+
+What are the different types in volume?
+
+How many container running on your environment?
+
+How to push docker image to the registery?
+How to tag a image and push to docker hub?
+How to build a docker image using docker file?
+
+What is name space in docker?
+What is gozo (sudo) in docker?
+What is device mapper in docker?
+How we will upgrade the application in n the docker ?
+
+Are the container logs stored inside a container or in host serrver? What is the location of contianer logs?
+	Container logs stored inside the host server
+	we can find the location of container logs with the below comamnd	
+		#docker inspect <container-name>
+		and the look for the "logpath" value
+
+How to start the docker container after reboot?
+	we can use the restart policy "always"
+
+How to clean up the ols running images?
+	we can use "--rm" paramter at the starting of dokcer image itself. As wheb the container will stop it automatically remove the image.
+
+Is it possible to use restart and "--rm" flag together?
+	No, it will show the "confilt" message.
+
+Where namespace, cgroup and UnionFS is used in docker?
+	Namespace -> provide the isolcation between the continer and host matchine.
+	Cgroup(control grup) -> it is resposible for resource maagement like CPU, Memory, and Block I/O.
+	UnionFS -> it is a file system service which is used for creating docker images layers
+
+
+How to check the details about any image?
+	#docker inspect <imageName/imageID>
+
+How to check details about each layer in a docker images like size, task done, timestamp?
+	we can get this information with the below command
+		#docker hostory <imageName/imageID> --no-trunc
+
+How to remove dangaling images and why is it useful?
+	dangaling images are the unused images which are not associated with any of the container.
+	to disk space free, we need to clean up the images.	
+	To remove the dangling images
+		#docker images prune
+
+How to run a container in interactive and daemon mode?
+	#docker -itd --name <container-name> <imageName>
+
+Is it possible to create container's writable layer without running a docker containers?
+	we ca use below command
+		#docker create -it --name <container-name> <image-name>
+
+How to find size of any container's writable layer?
+	#docker ps -a --size
+
+I have a requirement to copy token/config file inside acontainer but cannot use docker cmd for that. Is there any alternative to achive it?
+	we can the get the path under "UpperDir" under "docker image <imagename/Imageid" optupt and then copy the file in that location.
+
+Can you interact with host docker from inside the container?
+	yes. we can mount "/var/run/docker.sock" from the host to container then run the below command.
+		#docker run -itd- -v /var/run/docker.sock:/var/run/docker.sock --name docker docker
+
+What are the most common instructions you used while writing a dockerfile?
+	FROM - we provide the base image
+	ARG - it is used to pass the variable to docker at build
+	LABEL - it is used to add meta data to the image.
+	ENV -  it is used to awt the environemnt variable.
+	WORKDIR - it is sued to set the conrking diectory
+	RUN - it is used to excute any command	
+	COPY - it is used to copy a new file or directory in the image
+	ADD - it is same as copy and copyt the file from the remote loaction
+	EXPOSE - it tell the docker that application will listen to which port
+	CMD and ENTRYPOINT - it runs a command when container start from the given image
+
+I want to protect my sensitive data and avoid adding few files/folder like .git/tests while building an images. Is there any wayto control it?
+	we can add the file or folder in ".dockerignore" file. ".dockerignore" can be in the same location of the docker file
+		#vi .dockerignore
+			.git/
+			tests/
+			.aws
