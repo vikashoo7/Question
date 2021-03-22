@@ -9,8 +9,6 @@
 * Which kubernetes version are you use?
     1.19
     
-* What is the difference in scheduler?
-
 * What are the differnet types of container?
     1. Single container
     2. Multi container
@@ -106,7 +104,39 @@
     
 * What is ingress?
 
+* What is startup probes?
+	The kubelet uses startup probes to know when a container application has started. 
+    If such a probe is configured, it disables liveness and readiness checks until it succeeds.
 
+* What is the headless service?
+	Sometimes you don't need load-balancing and a single Service IP. 
+    In this case, you can create what are termed "headless" Services, by explicitly specifying "None" for the cluster IP
+
+* What are the scalling method are the there?
+	HPA
+	VPA
+	
+* Why we are creating resource quota for name space?
+	we are using this to limit the server resources consumption.
+	To avoid overutilization of the cluster.
+
+* What type of volumes used?
+	NFS, empty diectory, host path
+
+* I have a database container that accept the request from the particular IP. So how we can achieve?
+	we can use selector and labels.
+
+* What is Node affinity, Traints, Tolerance?
+	Node affinity - it is a property of Pods that attracts them to a set of nodes.
+	Traints - they allow a node to repel a set of pods.
+	Tolerance - Tolerations are applied to pods, and allow the pods to schedule onto nodes with matching taints.
+	
+* What is the purpose of Traints, Tolerance?
+	Taints and tolerations work together to ensure that pods are not scheduled onto inappropriate nodes. 
+    One or more taints are applied to a node; this marks that the node should not accept any pods that do not tolerate the taints.
+
+* What is Pod Disruption Budgets?
+	Kubernetes offers features to help you run highly available applications even when you introduce frequent voluntary disruptions.
     
 * What is the high level diagram for Kubernetes?
     The kubernetes follow master-worker achitehture. The master has the view componet and the work has the few compoent.
@@ -120,6 +150,8 @@
         2. kubelet - it is an agent that runs on each node in a cluster. 
                      It listen the instruction from the Kubernetes API server and deploys or destroy containers on the nodes as required
         3. Container runtime - it is resposible for running containers.Currently, K8s supports both Docker and Rocket containers.
+* What is HPA and VPA?
 
-What is the command to join the new node to the k8s cluster?
-What is the difference in docker swarn and Kubernetes?
+* What is Adapter container? 
+* What is the command to join the new node to the k8s cluster?
+* What is the difference in docker swarn and Kubernetes?
