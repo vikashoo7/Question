@@ -48,7 +48,6 @@
           task:
           - name: Installing the pacakge
             yum:
-              with_items:
               name: ["package1", "package2"]
               state: present
             when: '{{ ansible_distribution }}' == 'Ubuntu'
