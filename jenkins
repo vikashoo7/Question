@@ -2,6 +2,7 @@ What is the Jenkins pipe line file?
 How to integrate the git with the Jenkins?
 What is the Jenkins pipeline? Which language it will support?
 Where Jenkins store the log?
+  #{JENKINS_HOME}/jobs/<job-name>/builds/<build-number>/log
 How to trigger a Jenkins using URL?
 What is no of jobs and current job in Jenkins?
 What are the Jenkins pipeline?
