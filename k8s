@@ -63,8 +63,7 @@
  
  * What is the use of cluster IP in the K8s cluster?
     It helps the application to access with in the cluster.
- 
- * What is headless service?
+
  
  * What are the types of service?
     ther are primarily 3 type od service.
@@ -102,7 +101,6 @@
     1. liveness probe - it will check for the applicattion health at a regular interval time
     2. readiness probe - it will wait for the traffic for a specific time to get the connection.
     
-* What is ingress?
 
 * What is startup probes?
 	The kubelet uses startup probes to know when a container application has started. 
@@ -133,7 +131,7 @@
 	
 * What is the purpose of Traints, Tolerance?
 	Taints and tolerations work together to ensure that pods are not scheduled onto inappropriate nodes. 
-    One or more taints are applied to a node; this marks that the node should not accept any pods that do not tolerate the taints.
+    	One or more taints are applied to a node; this marks that the node should not accept any pods that do not tolerate the taints.
 
 * What is Pod Disruption Budgets?
 	Kubernetes offers features to help you run highly available applications even when you introduce frequent voluntary disruptions.
@@ -150,8 +148,10 @@
         2. kubelet - it is an agent that runs on each node in a cluster. 
                      It listen the instruction from the Kubernetes API server and deploys or destroy containers on the nodes as required
         3. Container runtime - it is resposible for running containers.Currently, K8s supports both Docker and Rocket containers.
-* What is HPA and VPA?
 
+* What is HPA and VPA?
+* What is ingress?
+* What is headless service?
 * What is Adapter container? 
 * What is the command to join the new node to the k8s cluster?
 * What is the difference in docker swarn and Kubernetes?
