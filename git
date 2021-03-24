@@ -1,2 +1,8 @@
-How to roll back a commit in git?
 How to create branch in git?
+  #git branch new_branch
+  
+What is the tag in git?
+  it is used for a marked version release.
+  A tag is like a branch that doesn't change Unlike branches, tags, after being created, have no further history of commits.
+
+How to roll back a commit in git?
