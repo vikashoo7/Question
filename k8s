@@ -149,6 +149,13 @@
                      It listen the instruction from the Kubernetes API server and deploys or destroy containers on the nodes as required
         3. Container runtime - it is resposible for running containers.Currently, K8s supports both Docker and Rocket containers.
 
+* What is operator in kubernetes?
+	This is used to deploy stateful application.
+
+* What is control loop mechanism in kubernetes?
+	
+* What is CRD(custom Resource Definatsions)?
+
 * What is HPA and VPA?
 * What is ingress?
 * What is headless service?
