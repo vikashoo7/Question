@@ -145,29 +145,74 @@ User
 
 Filesystem
 ------
-    What is the difference between ext4 and ext3 in terms of journel? Hint: in ext4 the journel is optional but in ext3 it is mandatory.
-    Df -h command is hanging?
-    How to extend the lvm?
-    How to extend the raw file system. Hint: it's not possible
-    Du df showing different output?
-    There is a disk of 2 partition, both are working fine.but after rebooting, the one of the partition is not visible? Hint:  there is a problem with the cylinder in the partition. Correct that one it will work
-    How to remove a file system?
-    How to create an LVM?
-    what is the suberblock?
-    What is the difference between tune2fs and fsck?
-    what is the disadvantage of lvm.
-    how to recover lvm?
-    how to recover suberblock?
-    What is lvm striping?
-    What is the difference between L and l in lvm?
-    How to reduce the Root file system?
-    Df command is hanging ? How do we identify the problem mount point? 
-    How to extend swap using LVM?
-    What is LVM mirror?
-    What is lvm filter?
-    How to extend the inode in the Linux?
-    How to increase a physical memory of a VM on the fly?
+    * What is the difference between ext4 and ext3 in terms of journel? Hint: in ext4 the journel is optional but in ext3 it is mandatory.
+    	ext4
+	ext3
+	xfs
+	
+    * Df -h command is hanging?
+    	This happens due to nfs stale. 
+	
+    * How to extend the lvm?
+    	#lvextend -L +size /dev/volumeGroup/lv
+	
+    * How to extend the raw file system. Hint: it's not possible
+    	we cannot increase the raw filesystem
+	we can follow the below steps for raw file system extension
+		1. Take the backup of the existing disk
+		2. Create the required the size of disk
+		3. Restore the data from the backup in the new disk
+		4. mount the new disk
+		5. delete the old disk
+		
+    * Du and df showing different output?
+    	This is due to some process is holding the file which is not present in the server.
+	
 
+    * How to remove a file system?
+    	follow the below steps:
+		1. Delete the entry from the fstab
+		2. unmount the file filesystem
+		3. Disable the lvm
+		4. Delete the lVM
+			#lvremove /dev/datavg/mylv
+			
+    * How to create an LVM?
+    	follow the steps:
+		1. create the saparate disk using fdisk
+		2. create the PV
+			#pvcreate /dev/mydisk
+		3. create the volme group
+			#vgcreate myVol /dev/mydisk
+		4. Create the lvm
+			#lvcreate -L sizs -n myLV myVol
+		5. Add the filesystem
+			mkfs.xfs /dev/myVol/myLV
+		7. Add the entry in the fstab and mount the file system
+		
+    * what is the suberblock?
+    	A superblock is a collection of metadata used to show the properties of file systems. It describe a file system along with inode, entry and file
+
+    * how to recover suberblock?
+    * 
+    * What is the difference between tune2fs and fsck?
+    	tune2fs allows to adjust various tunable filesystem parameters.
+	fsck (file system consistency check) is a tool for checking the consistency of a file system.
+	
+    * what is the disadvantage of lvm.
+    * how to recover lvm?
+
+    * What is lvm striping?
+    * What is the difference between L and l in lvm?
+    * How to reduce the Root file system?
+    * Df command is hanging ? How do we identify the problem mount point? 
+    * How to extend swap using LVM?
+    * What is LVM mirror?
+    * What is lvm filter?
+    * How to extend the inode in the Linux?
+    * How to increase a physical memory of a VM on the fly?
+    * There is a disk of 2 partition, both are working fine.but after rebooting, the one of the partition is not visible? Hint:  there is a problem with the cylinder in the partition. Correct that one it will work
+    
 
 
 
