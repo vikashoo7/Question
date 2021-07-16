@@ -86,7 +86,7 @@
 * How to copy the file from one location to other locations in the remote server using Ansible?
     we can use "remote_src" to copy the file from one location to other location in the remote server. "remote_src=yes" means it will look for source in the remote server.
       - name: Copying the file
-        file:
+        copy:
           src: /remote/server/source/file
           dest: /remote/server/destination/file
           owner: root
