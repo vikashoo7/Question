@@ -94,7 +94,9 @@
           state: link
           remote_src: yes
 
-How to copy a file between remote server using Ansible?
+* How to copy a file between remote server using Ansible?
+    we can use "fetch" module to copy the file from the remote server and control server
+    
 what is the difference between playbook and task?
 How to run a playbook using a different user?
 How to run an ansible in 3 different time zone?
