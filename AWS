@@ -31,7 +31,7 @@ How to Create the VPC?
    it i a  logically isolated of virtual network.
 
 * Where is S3 logs stored?
-  it is simple storage service.
+  it is simple storage service. it is a object storage.
   
 * Can we mount S3 on the server?
    Yes, we can. we can use the below comamnd to mount the s3 in the linux server.
@@ -43,16 +43,18 @@ How to Create the VPC?
 
 * What is ELB?
    It is used to distribute the traffice between the servers.
+   
 * What is EBS?
    it is hight performace block-storage service.
    
 * How to extend a EBS volume from 50 to 500G.
    we cannot extend the EBS diretly. 
-   we can take the snapdort of 50G disk and 
+   we can take the snapdort of 500G disk and 
    then provission 500G disk. 
    Extract the data from the snap sort then moont the 500G.
 
 * What is the difference in later 7 and layer 5?
+
 * What is load balancer?
    It is used to distribute the traffice between the servers.
 
@@ -63,19 +65,26 @@ How to Create the VPC?
    3. Application load balancer
    
 * What is the RDS?
-   This is the AWS relational database server.
+   This is the AWS relational database service.
    
-What is the database you use in AWS?
-What is the difference between Amazon RDS and stand alone MySQL database?
+* What is the database you use in AWS?
+* What is the difference between Amazon RDS and stand alone MySQL database?
 
-How to block a specific port in AWS?
+* How to block a specific port in AWS?
 
-What is the difference in EBS and S3?
-What is the difference between NAT and loadbalancer?
+* What is the difference in EBS and S3?
+   EBS is block storage and S3 is Object storage
+ 
+* What is the difference between NAT and loadbalancer?
+   NAT is used to connect with internet. Loadbalancer distribute the traffice between the servers.
 
 
-Where we can keep the ssl certificate in the AWS?
-What is route 53 does?
+* Where we can keep the ssl certificate in the AWS?
+   we can use  AWS Certificate Manager (ACM) to impport or keep the certificate.
+ 
+* What is route 53 does?
+   Route53 is a AWS DNS service.
+ 
 How to create AWS ec2 instances using command line?
 Explain 3 tire architecture in AWS?
 What type of images you use in AWS?
