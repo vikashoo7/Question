@@ -20,6 +20,7 @@ How to Create the VPC?
 * What is NAT gateway?
    Network Address Translation (NAT) Gateway, a highly available AWS managed service 
    that makes it easy to connect to the Internet from instances within a private subnet in an AWS.
+   It Must be launched in a public subnet
    
 * How to connect AWS network to on your own premises data center?
 
