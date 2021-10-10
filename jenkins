@@ -1,12 +1,27 @@
 * Where Jenkins store the log?
   #{JENKINS_HOME}/jobs/<job-name>/builds/<build-number>/log
 
-What is no of jobs and current job in Jenkins?
+* What is no of jobs and current job in Jenkins?
   we can set "# of executors" value in the jenkins.
     Manage Jankins -> Configure System -> "# of executors"
-    
-What is the Jenkins pipe line file?
-How to integrate the git with the Jenkins?
+
+* What is the difference between Declarative and Scripted piplie?
+    Declarative pipelines 
+      it always begin with the word pipeline. 
+      it break down stages into individual stages that can contain multiple steps.
+    Scripted pipelines
+      it always begin with the word node. 
+      use Groovy code and references to the Jenkins pipeline DSL within the stage elements without the need for steps.
+  
+* What is the Jenkins pipe line file?
+    Jenkins file storee the information about different stages of the pipeline.
+
+* How to integrate the git with the Jenkins?
+    Below steps we can use:
+      1.install the git on the server
+      2. install git plugin from the Jenkins
+      3. Create a token or password less login from the git server to the jenkind servers.
+      
 What is the Jenkins pipeline? Which language it will support?
 
 How to trigger a Jenkins using URL?
