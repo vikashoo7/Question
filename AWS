@@ -31,7 +31,8 @@ How to Create the VPC?
    it i a  logically isolated of virtual network.
 
 * Where is S3 logs stored?
-  it is simple storage service. it is a object storage.
+  By default, S3 logs are not enabled.
+  First we need to enable to logs and then we can see the logs in the in the S3 bucket in the same region.
   
 * Can we mount S3 on the server?
    Yes, we can. we can use the below comamnd to mount the s3 in the linux server.
@@ -71,6 +72,7 @@ How to Create the VPC?
 * What is the difference between Amazon RDS and stand alone MySQL database?
 
 * How to block a specific port in AWS?
+    By default, all the ports is denied. So it is not possible to block a specific port in the AWS.
 
 * What is the difference in EBS and S3?
    EBS is block storage and S3 is Object storage
