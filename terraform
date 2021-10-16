@@ -1,0 +1,12 @@
+How to create the EC2 instance using teraform?
+At which  state file will generate?
+How we manage state file?
+How to create a resource which has the dependency with other recourse?
+How to delete an EC2 instance in a group of EC2?
+How to create 10 EC2 instance with a different name?
+If 4 developer is managing in teraform and they all push the code at a same time then how we will avoid this situation?
+What is precedence of variable in terrform?
+What is functiona in Teraform?
+Create a terraform code for creating the ec2 instance?
+How to read terrform state file?
+How to terraform init?
