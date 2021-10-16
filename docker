@@ -2,6 +2,12 @@
 * What is the difference between the VM and container?
 * What is docker and how to use it.
 * What is container?
+What is the different between RUN and CMD in docker?
+What are the network driver in docker?
+How to get the layer details in docker?
+Create a docker file for running Java applications?
+Command to tag an image?
+
 
 * Can we run multiple process in docker?
 
