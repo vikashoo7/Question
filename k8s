@@ -162,3 +162,25 @@
 * What is Adapter container? 
 * What is the command to join the new node to the k8s cluster?
 * What is the difference in docker swarn and Kubernetes?
+How is EDS? Not remember the exact name?
+Affinity and inaffinity in os?
+If I have 2 nodes then I already deployed 2 pod and I want to deploy 3rd node with inaffinity then how we will deploy?
+What will have to existing workload when etcd server is failed?
+How to expose the port to the out side of the cluster?
+What are security features provided in the K8s?
+What are the different deploymeny strategy in K8s?
+What are the component of os?
+The pod is in loopback status then what is the probably reason?
+What is service?
+How networking works in os?
+How to communicate the service from one projects to another?
+What is the storace class you used?
+How to provide the access to the user in thr k8s
+How to provide the Adim accsee to the cluster to a user?
+How what is the K8s architecture?
+What are the types od service?
+What is the different between liveness probe or readness probe?
+Can we connect multiple pv to a single pvc?
+How to get the pending pod in k8s?
+What is training and tolerance?
+Command to apply taint?
