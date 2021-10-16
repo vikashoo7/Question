@@ -533,6 +533,38 @@ Boot
     * What is pxe boot? How it works?
     * What are the components required to set up PXE boot or how to setup PXE boot?
     
+    What is the parameters need to set when ssh is not  set on the remote the server and need to connect via service account?
+Can we apply sticky bit for only file?
+What is the difference between teaming and bonding?
+What is journaling?
+How to check the size of the disk in PV?
+What is the purpose of lvm.conf file?
+Can we shink xfs file system?
+How to get the date of rpm installed?
+How to install the rpm in a specific location?
+What is the purpose of labeling ?
+How to clean /boot file system?
+How to get the hba port detail?
+What if there is an issue with intramfs?
+Where to update kernel parameters?
+What is teaming?
+Fsck command for rhel 7
+If an error occurs at 11 line of the code then how to handle the except?
+Can we start systemd at a specific time?
+What is the difference in systemd and init?
+What are the things systemd do?
+What are the run labels?
+What is the difference between rhel 6 and 7?
+ What are field in the fstab?
+If disk fail, which parameter we can add to fstab to avoid to go to the system in maintanance mode? Hint: use nofail parameter.
+Command to list out the package which install in patching?
+What are the OS performance parameter you perform?
+How to skip the kernel version during the patching?
+Remove the old kernel and now server running with the new kernel. After reboot server is not coming up. Then how we will up the server?
+Some files is curropted in root files system and after reboot the server is not coming up. Then how to make server up?
+How to backup and restore xfs file system?
+What will happen to child process if Parents process with be deleted?
+    
     
     
 
