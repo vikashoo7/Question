@@ -98,6 +98,23 @@ What is the CDN?
 
 What is the EC2?
 
+How to sync between between the two S3 across the zone?
+If a server is in the private Network then how it will connect to internet?
+What is the difference in community and Market place AMI in AWS?
+Where to see the logs for EC2 instance?
+How many ip addresses  will be there for 10.0.1.0/16?
+How to configure VPc?
+How to configure NAT route in private subnet?
+How to configure the application load balancing?
+How to configure 100 of VPC which are in different  region?
+How to configure load balancing routing?
+How to not destroy a specific ec2 instance in automating?
+What are the autoscaling type?
+What is the difference  between cloudwatch and cloudtrail?
+What is log group in cloud watch?
+What is SNS?
+IaM block for Json block for giving the s3 permission to the user?
+
 
 
 
