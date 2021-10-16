@@ -102,3 +102,13 @@ How to run a playbook using a different user?
 How to run an ansible in 3 different time zone?
 How to run a 30 server in the 100 server at a time in ansible? Hint: serial and parallel concept?
 What are the protocol ansible uses while connecting to the client?
+How to copy the file from one location to other locations in the remote server using Ansible?
+How to copy a file between remote server using Ansible?
+Write a Ansible playbook to install multiple pacakge on a different distribution of OS?
+What is module errors in ansible?
+How to copy a file from 2remote server to the third remote server?
+How to call api using Ansible?
+What is dynamic inventory in Ansible?
+How we can apply playbook for a set of ansible host?
+How to apply role on an rhel only?
+
