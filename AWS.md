@@ -39,6 +39,9 @@ VPC
             one is for the gateway and other is for broadcast is reserveed.
             
        * How to configure NAT route in private subnet?
+            Route for NAT gateway for private Subnet
+                  Destination(0.0.0.0/0) ----> Target(NAT-Gateway-Name)
+                  
        * How to configure 100 of VPC which are in different  region?
         
 S3
