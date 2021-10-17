@@ -30,8 +30,14 @@ VPC
 
        * What is the VPC?
           it i a  logically isolated of virtual network.
+          
        * If a server is in the private Network then how it will connect to internet?
+            With the help of NAT, we will able to connect the private subnet server to the Internet.
+            
        * How many ip addresses  will be there for 10.0.1.0/16?
+            Total number of IP Address of "10.0.1.0/16" is 2^(32-16)-2
+            one is for the gateway and other is for broadcast is reserveed.
+            
        * How to configure NAT route in private subnet?
        * How to configure 100 of VPC which are in different  region?
         
@@ -97,6 +103,7 @@ EC2, Autoscalling, EBS, CDN
     * Where to see the logs for EC2 instance?
     * What is EBS?
           it is hight performace block-storage service.
+          
     * How to extend a EBS volume from 50 to 500G.
           we cannot extend the EBS diretly. 
           we can take the snapdort of 500G disk and 
@@ -128,6 +135,7 @@ General
 
     * What is the difference between NAT and loadbalancer?
         NAT is used to connect with internet. Loadbalancer distribute the traffice between the servers.
+        
     * Explain 3 tire architecture in AWS?
     * What are the AWS components you have worked on?
     * How to configure postfix in AWS?
