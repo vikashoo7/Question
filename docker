@@ -7,7 +7,11 @@ What are the network driver in docker?
 How to get the layer details in docker?
 Create a docker file for running Java applications?
 Command to tag an image?
-
+What is the difference  between  docker repository and docker registry?
+What are the different state in docker?
+Can we delete pause state docker container?
+What is docker api?
+How to use docker api?
 
 * Can we run multiple process in docker?
 
