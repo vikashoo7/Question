@@ -7,4 +7,6 @@ What is the tag in git?
 
 How to roll back a commit in git?
 What is the difference in fetch and pull?
-
+what is the difference in "git revert" and "git reset"?
+What is the differnece between "git clone" and "git checkout"?
+How to move once branch to other branch?
