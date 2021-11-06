@@ -6,3 +6,5 @@ What is the tag in git?
   A tag is like a branch that doesn't change Unlike branches, tags, after being created, have no further history of commits.
 
 How to roll back a commit in git?
+What is the difference in fetch and pull?
+
