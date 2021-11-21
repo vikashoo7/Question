@@ -69,7 +69,9 @@ Shell Script
 
 	
     * Find the second largest number using shell script?
-
+    * Shell script like mysql command?
+    * How to redirect errors and output in the shell script?
+    * What is $! In shell script?
 
 
 
@@ -564,7 +566,9 @@ Remove the old kernel and now server running with the new kernel. After reboot s
 Some files is curropted in root files system and after reboot the server is not coming up. Then how to make server up?
 How to backup and restore xfs file system?
 What will happen to child process if Parents process with be deleted?
-    
+Delete the file which is created before 30days
+What is swap space?
+What is the reason that root is not able to deleted a file?    
     
     
 
