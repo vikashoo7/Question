@@ -43,7 +43,14 @@ VPC
                   Destination(0.0.0.0/0) ----> Target(NAT-Gateway-Name)
                   
        * How to configure 100 of VPC which are in different  region?
-        
+            How to peer the 2 VPC?
+            How to design the VPC echo system?
+            What is the difference between NACL and route table?
+            How to connect 2 VPC?
+            What is transite gateway?
+            How to configure aws backup policy?
+            How to configure VPN?
+            How to connect 2 VPC with using peering?
 S3
 ---
        * Where is S3 logs stored?
@@ -58,6 +65,11 @@ S3
           we can use the below command to sync the s3
            #aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
        * How to sync between between the two S3 across the zone?
+            How to transfer 50tb Data in Aws?
+            What are the different type of s3 bucket?
+            How to access the S3 bucket in the difference account?
+            How to set the permissions for S3 bucket. So that no one can delete file?
+
 
 
 
@@ -75,6 +87,10 @@ Load Balancer
           It is used to distribute the traffice between the servers.
        * How to configure load balancing routing?
        * How to configure the application load balancing?
+       How to configure url based routing in the lb?
+            How to configure algorithm in the lb?
+       What are different routing protocal in load balancer?
+
     
 RDS
 ----
@@ -95,10 +111,24 @@ Route 53
 ---
     * What is route 53 does?
        Route53 is a AWS DNS service.
+    How route53 route the traffic?
    
 EC2, Autoscalling, EBS, CDN
 ---
     * How to create AWS ec2 instances using command line?
+    How to copy a snapshot from one account to another in AWS?
+      What are types of EBS in AWS?
+      How to transfer 50tb Data in Aws?
+      What is the rate of iops in G2?
+      What is the life cycle of the instances in autoscaling?
+            What are the autoscaling  type?
+      What is target group?
+      How to configure autoscalling?
+      What spot instances? What is its advantages or disadvantages?
+      When we are increasing the server resources,  do this required down time.?
+      What is spot instances and reserved instances?
+      How to access EC2 in a different VPC?
+
     * What is the EC2?
     * What are the autoscaling type?
     * How to not destroy a specific ec2 instance in automating?
@@ -117,6 +147,12 @@ AMI
 ---
       * What type of images you use in AWS?
       * What is the difference in community and Market place AMI in AWS?
+      * What is the difference  in AMI and snapsort
+      How I can provide the access to the user for 100 account using IAM role?
+      How I can provide the access to  s3 and ec2 instance using the IAM?
+      What are the parameters in IAM when we are giving the access?
+      What is the trust relationship in AWS?
+
 
 IAM
 ---
@@ -143,6 +179,8 @@ General
     * What are the AWS components you have worked on?
     * How to configure postfix in AWS?
     * What is the difference in later 7 and layer 5?
+    What is cloud trail?
+    What is cloud endure?
 
 
 
