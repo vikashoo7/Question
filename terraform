@@ -10,3 +10,15 @@ What is functiona in Teraform?
 Create a terraform code for creating the ec2 instance?
 How to read terrform state file?
 How to terraform init?
+What is terraform import?
+How to recover when state file is lost? Hint: terraform import
+What is the difference in module and workspace in terraform?
+How to limit the teraform version between the team?
+What is count=0 in teraform?
+Which parameter we need to add when we have the dependency with other recourse to be created before any other resource?
+If AWS launches a new service, then those details is not present in the terraform. So how can we handle such situation?
+When 2 people execute terraform script at the same time, then how we can avoid this situation?
+How we can store the state file remotely?
+What is data source in terraform?
+What is loop in the terraform?
+Can we add two providers in the terraform scripts?
