@@ -111,4 +111,7 @@ How to call api using Ansible?
 What is dynamic inventory in Ansible?
 How we can apply playbook for a set of ansible host?
 How to apply role on an rhel only?
-
+Command to list the inventory in ansible?
+How to check the syntaxes in ansible?
+How to dry run in ansible?
+What is magic variable in ansible?
