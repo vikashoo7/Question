@@ -13,6 +13,23 @@ Can we delete pause state docker container?
 What is docker api?
 How to use docker api?
 what is docker cache?
+How to pause the container?
+What is entrypoint in k8s?
+What is the default path of volume in docker?
+How to login with the docker image?
+How to scan the docker image for vulnerability?
+What is the difference between create and run in docker?
+What is the difference between in entrypoint and cmd?
+How to see the cpu utilization of a docker?
+What are the types of volume in docker?
+What is the difference between monolethic and microserives?
+What is docker demon?
+How to customize the docker image? hint: Small size
+How to copy the file from thr docker to a local system?
+How to call the docker image from the private  docker repository?
+What is docker cache?
+What is onbuild command in docker?
+What is the difference between Add and Copy?
 
 * Can we run multiple process in docker?
 
