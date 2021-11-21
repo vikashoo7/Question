@@ -22,3 +22,4 @@ How we can store the state file remotely?
 What is data source in terraform?
 What is loop in the terraform?
 Can we add two providers in the terraform scripts?
+How to copy local files in ec2 using tetaform?
