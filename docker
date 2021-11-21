@@ -11,25 +11,48 @@ What is the difference  between  docker repository and docker registry?
 What are the different state in docker?
 Can we delete pause state docker container?
 What is docker api?
-How to use docker api?
-what is docker cache?
-How to pause the container?
-What is entrypoint in k8s?
+* How to use docker api?
+	it an API for interacting with the Docker daemon
+* what is docker cache?
+	it will cache the results of the first build of a Dockerfile and use the same layer in the comming build.
+* How to pause the container?
+	#docker pause my_container
+	#docker unpause my_container
+	
+* What is entrypoint in k8s?
+	it will tell the docker image to run the application.
+	
 What is the default path of volume in docker?
-How to login with the docker image?
-How to scan the docker image for vulnerability?
+* How to login with the docker image?
+	#docker exec -it <my-container> /bin/bash
+	
+* How to scan the docker image for vulnerability?
+	#docker scan hello-world
 What is the difference between create and run in docker?
-What is the difference between in entrypoint and cmd?
-How to see the cpu utilization of a docker?
+* What is the difference between in entrypoint and cmd?
+	ENTRYPOINT instruction allows to configure a container that will run as an executable. but CMD allows to specify a command with parameters.
+
+* How to see the cpu utilization of a docker?
+	#docker stats	##list the cpu for all the container
+	
 What are the types of volume in docker?
 What is the difference between monolethic and microserives?
-What is docker demon?
-How to customize the docker image? hint: Small size
+* What is docker demon?
+	Docker Daemon is simply a part of Docker Engine which run the application
+	
+* How to customize the docker image? hint: Small size
+	we need to 
+		1. Selection of base image. smaller the size better the performace.
+		2. remove all the unnecessary package/binary
+		3. No unwanted open shuld open
+		
 How to copy the file from thr docker to a local system?
 How to call the docker image from the private  docker repository?
 What is docker cache?
-What is onbuild command in docker?
-What is the difference between Add and Copy?
+* What is onbuild command in docker?
+	 it adds to the image a trigger instruction to be executed at a later time, when the image is used as the base for another build.
+	 
+* What is the difference between Add and Copy?
 
 * Can we run multiple process in docker?
 
