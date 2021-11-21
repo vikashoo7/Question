@@ -184,3 +184,21 @@ Can we connect multiple pv to a single pvc?
 How to get the pending pod in k8s?
 What is training and tolerance?
 Command to apply taint?
+What is the difference between replicaset and replication controller?
+How to login to the pod?
+What is the use of headless service?
+Yaml file for creating the pod?
+What is the statefullSet ?
+What is liveness probe and how to configure it?
+What is ingress?
+What is traint and tolerance?
+What is custom resource in Kubernetes?
+What is the difference in demonstration, replicaset and statefulset?
+How to create secret in Kubernetes 
+How to upgrade the certificate in the Kubernetes?
+What is I ingress and egress in Kubernetes?
+How auto scalling works on Kubernetes?
+How to configure ssl certificate in the pod in the Kubernetes?
+What traint and tolerance in kubernrtes?
+What is ingress in Kubernetes?
+How to expose the service in Kubernetes?
