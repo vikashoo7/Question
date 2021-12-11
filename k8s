@@ -152,6 +152,27 @@
 * What is operator in kubernetes?
 	This is used to deploy stateful application.
 
+* What are Kubernetes security best practise?
+	Kubernetes best practise can be devided into 4 	parts/cotegary:
+	1. Develpment phase - Here we code and dockrise the application.
+		we should always create  minimum images and less in size and this will reduce the attach surfaces.
+		we can use multistage build to reduce the size
+		Run the static scan for vulnerabilities from the tool like (clair, TwistLock, AquaSec)
+		Use the private repository instead of public repository.
+	2. Infrastructure phase - Here we will spin up the cluster for k8s
+		Use the harden AMIs. Reduce the unwanted packages from the AMI
+		Run the latest K8s version.
+		Run kube-bench for CIS benchmark (list of the vulnerabilities) periodically.
+
+	3. Application phase - Here we will deploy the container and run the containers
+		Use the namespace to divide the cluster and use "resource quota" for each namesace.
+		Use Network policy to control the network trafffic by IP, labels or namespace. as we know all pod talk t oeach other by default.
+		Implement RBAC(Role based access control)
+		Do not allow priviledge esclaction -> means provide only those access that is needed. in pod manifest file always put "previlidge escalation: false"
+	4. Detaction phase - Here we will be monitoring the infrastructure
+		Run the dynamic scan on running container -> highly recomended. tools:TwistLock, AquaSec, Synk)
+		Enable audit logs. Create the alarm
+		
 * What is control loop mechanism in kubernetes?
 	
 * What is CRD(custom Resource Definatsions)?
