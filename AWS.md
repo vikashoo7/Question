@@ -181,6 +181,56 @@ General
     * What is the difference in later 7 and layer 5?
     What is cloud trail?
     What is cloud endure?
+    How to access EC2 in a different VPC?
+How to access the S3 bucket in the difference account?
+What are different routing protocal in load balancer?
+How to set the permissions for S3 bucket. So that no one can delete file?
+What is transite gateway?
+How to configure aws backup policy?
+How to configure VPN?
+How to connect 2 VPC with using peering?
+What is ngjnx controller?
+How to connect different AWS account from the shared account?
+How to configure load balancing?
+How to restrict the S3 based on the geographical location?
+What are the different routing policy in route 53?
+What we need swap on the aws?
+How to integrate lamda, s3 and redis?
+What is ebs network enhance?
+How RDS Endpoint will connect to the application?
+What is S3 lifecyscle?
+What are the permissions in S3?
+What is instance profiling?
+What is transit Gateway and how it works?
+What are type vpc Endpoint?
+What is KMS in aws?
+What is TLS termination in load balancer?
+How to encrypted the ebs in aws?
+What is privatelink?
+How to connect vpc Endpoint in AWS?
+How to change the configuration in inodb?
+What are the different routing in application load balancer?
+How to stop deleting a specific node in autoscaling?
+What are the s3 storage classes?
+What is cloud front?
+How to rotate the logs for every 10 days which store in S3?
+How to copy a bucket from one bucket to another?
+What is FSX?
+Can we mount EFS in the linux and Window server?
+What are the different type os storage?
+What EFS?
+How to establish between on premise to cloud in AWS?
+What is connection draining in load balancer?
+How to monitor VPC?
+What are the security practices for ec2 instances?
+How to get the logs for VPC?
+AWS system manager?
+Which is stateless and statefull in security group and NACL?
+What is cloud trail?
+What is cloud front?
+Have you access private end point point in AWS?
+How many default VPC we can create in an account?
+What are way to restrict S3? Hint- by iam policy, bucket policy, object policy.
 
 
 
