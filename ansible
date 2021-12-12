@@ -115,3 +115,10 @@ Command to list the inventory in ansible?
 How to check the syntaxes in ansible?
 How to dry run in ansible?
 What is magic variable in ansible?
+How to get configuration file detail in the ansible? HINT: Not the default location 
+A particular role will call before calling to a specific role. How?
+How to hide sensitive information from the screen?
+What are the different strategies in ansible?
+How to parallel run 10 tasks in ansible?
+Ansible is pull based ..so how we can use pushed based?
+What is handlers in ansible?
