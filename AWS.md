@@ -229,6 +229,7 @@ Which is stateless and statefull in security group and NACL?
 What is cloud trail?
 What is cloud front?
 Have you access private end point point in AWS?
+How to connect VPC from on premise data center?Hint: there are the 3 ways to do it.
 How many default VPC we can create in an account?
 What are way to restrict S3? Hint- by iam policy, bucket policy, object policy.
 
