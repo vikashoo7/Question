@@ -223,3 +223,23 @@ How to configure ssl certificate in the pod in the Kubernetes?
 What traint and tolerance in kubernrtes?
 What is ingress in Kubernetes?
 How to expose the service in Kubernetes?
+What is startup probe?
+What is liveness probe and readness probe?
+What are parameter is there in the ingress controller?
+What is Endpoint in Kubernetes?
+How to set nodeaffinity in the Kubernetes?
+After deployment what are the Kubernetes object will create?
+What are the deployment strategy in the Kubernetes?
+What are the command to rollback the deployment?
+How to update the node Affinity in the deployment?
+How to configure secret for connecting private registry using deployment file?
+How to configure pod with min and max pod?
+How to reduce the pod size?
+How may max. Pod we can deploy in the Kubernetes per node?
+What will you do when API server fails? Hint: go to the master node, logs/pod and there is kubeapi pod is there and we can see the logs?
+What is meaning of exit code in Kubernetes?
+What is the difference between in jobs and pod?
+What are security practices for Kubernetes?
+What is replicaset?
+What is cni?
+What is service mesh?
