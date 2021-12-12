@@ -23,3 +23,27 @@ What is data source in terraform?
 What is loop in the terraform?
 Can we add two providers in the terraform scripts?
 How to copy local files in ec2 using tetaform?
+How to copy local files in ec2 using tetaform?
+How to download the statefile from the remote location?
+If I change the resources I'm the AWS then what will happen?hint: it will Recreate?
+How to list the resources created in the terraform?
+Is it possible to restrict the terraform Version?
+What is NULL resources in teraform?
+How to call the terraform modules?
+How to store the output of the teraform? Hint: terraform template and local file provisions.
+What is terraform lifecle? Hint: Destroy and recreate
+How to create the same infrastructure and redirect the traffic from the load balancer to the newly created infrastructure?
+How to integrate the terraform with ansible?
+What is the cicd for tertaform?
+What will happen if teraform break in the middle?
+What is terroform work space?
+What os the terraform infrastructure?
+How to get the output of all the resources created during the terraform apply?
+How to configure S3 to push the file into the statefile?
+When we run terraform in 2 difference location then how terraform lock the state file to update?
+How to encrypted terraform statefile ?
+What is terraform validate?
+Can we run the specific block of code in terraform?
+How to delete the specific resources in terraform?
+How to delete a specific resource in the terraform?
+What is resource data in terraform?
