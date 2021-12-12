@@ -243,3 +243,4 @@ What are security practices for Kubernetes?
 What is replicaset?
 What is cni?
 What is service mesh?
+How to connect database which is there outside the k8s cluster?
