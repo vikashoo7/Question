@@ -38,10 +38,19 @@ VPC
             Total number of IP Address of "10.0.1.0/16" is 2^(32-16)-2
             one is for the gateway and other is for broadcast is reserveed.
             
+       * How many default VPC we can create in an account?
+	      5 Account per region
+            
        * How to configure NAT route in private subnet?
             Route for NAT gateway for private Subnet
                   Destination(0.0.0.0/0) ----> Target(NAT-Gateway-Name)
                   
+       * What are type vpc Endpoint?
+	      it allows us to connect the AWS services with the private network.  
+            
+       * What is transite gateway?
+	      It is used to conenct for transitive pering for 1000s of VPC, on-premises, hub-and-spoke (start) connection.
+            
        * How to configure 100 of VPC which are in different  region?
             How to peer the 2 VPC?
             How to design the VPC echo system?
@@ -64,6 +73,13 @@ S3
        * How to sync between between the two S3 across the zone?
           we can use the below command to sync the s3
            #aws s3 sync s3://DOC-EXAMPLE-BUCKET-SOURCE s3://DOC-EXAMPLE-BUCKET-TARGET
+       * What is S3 lifecyscle?
+	      An S3 Lifecycle configuration is an XML file that consists of a set of rules with predefined actions 
+            that Amazon S3 to perform on objects during their lifetime
+            
+       * How to set the permissions for S3 bucket. So that no one can delete file?
+	      we can apply no-delete policy to your s3 bucket.
+            
        * How to sync between between the two S3 across the zone?
             How to transfer 50tb Data in Aws?
             What are the different type of s3 bucket?
@@ -182,56 +198,53 @@ General
     What is cloud trail?
     What is cloud endure?
     How to access EC2 in a different VPC?
-      How to access the S3 bucket in the difference account?
-      What are different routing protocal in load balancer?
-      How to set the permissions for S3 bucket. So that no one can delete file?
-      What is transite gateway?
-      How to configure aws backup policy?
-      How to configure VPN?
-      How to connect 2 VPC with using peering?
-      What is ngjnx controller?
-      How to connect different AWS account from the shared account?
-      How to configure load balancing?
-      How to restrict the S3 based on the geographical location?
-      What are the different routing policy in route 53?
-      What we need swap on the aws?
-      How to integrate lamda, s3 and redis?
-      What is ebs network enhance?
-      How RDS Endpoint will connect to the application?
-      What is S3 lifecyscle?
-      What are the permissions in S3?
-      What is instance profiling?
-      What is transit Gateway and how it works?
-      What are type vpc Endpoint?
-      What is KMS in aws?
-      What is TLS termination in load balancer?
-      How to encrypted the ebs in aws?
-      What is privatelink?
-      How to connect vpc Endpoint in AWS?
-      How to change the configuration in inodb?
-      What are the different routing in application load balancer?
-      How to stop deleting a specific node in autoscaling?
-      What are the s3 storage classes?
-      What is cloud front?
-      How to rotate the logs for every 10 days which store in S3?
-      How to copy a bucket from one bucket to another?
-      What is FSX?
-      Can we mount EFS in the linux and Window server?
-      What are the different type os storage?
-      What EFS?
-      How to establish between on premise to cloud in AWS?
-      What is connection draining in load balancer?
-      How to monitor VPC?
-      What are the security practices for ec2 instances?
-      How to get the logs for VPC?
-      AWS system manager?
-      Which is stateless and statefull in security group and NACL?
-      What is cloud trail?
-      What is cloud front?
-      Have you access private end point point in AWS?
-      How to connect VPC from on premise data center?Hint: there are the 3 ways to do it.
-      How many default VPC we can create in an account?
-      What are way to restrict S3? Hint- by iam policy, bucket policy, object policy.
+        How to access the S3 bucket in the difference account?
+  What are different routing protocal in load balancer? 
+  How to configure aws backup policy?
+  * How to configure VPN?
+	there are 2 things
+	1. get the curtomer gateway IP address and configure the it from the VPGateway.
+  How to connect 2 VPC with using peering?
+  What is ngjnx controller?
+  How to connect different AWS account from the shared account?
+  How to configure load balancing?
+  How to restrict the S3 based on the geographical location?
+  What are the different routing policy in route 53?
+  What we need swap on the aws?
+  How to integrate lamda, s3 and redis?
+  What is ebs network enhance?
+  How RDS Endpoint will connect to the application?
+  What are the permissions in S3?
+  What is instance profiling?
+  What is transit Gateway and how it works?
+  What is KMS in aws?
+  What is TLS termination in load balancer?
+  How to encrypted the ebs in aws?
+  What is privatelink?
+  How to connect vpc Endpoint in AWS?
+  How to change the configuration in inodb?
+  What are the different routing in application load balancer?
+  How to stop deleting a specific node in autoscaling?
+  What are the s3 storage classes?
+  What is cloud front?
+  How to rotate the logs for every 10 days which store in S3?
+  How to copy a bucket from one bucket to another?
+  What is FSX?
+  Can we mount EFS in the linux and Window server?
+  What are the different type os storage?
+  What EFS?
+  How to establish between on premise to cloud in AWS?
+  What is connection draining in load balancer?
+  How to monitor VPC?
+  What are the security practices for ec2 instances?
+  How to get the logs for VPC?
+  AWS system manager?
+  Which is stateless and statefull in security group and NACL?
+  What is cloud trail?
+  What is cloud front?
+  Have you access private end point point in AWS?
+  How to connect VPC from on premise data center?Hint: there are the 3 ways to do it.
+  What are way to restrict S3? Hint- by iam policy, bucket policy, object policy.
 
 
 
